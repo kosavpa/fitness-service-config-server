@@ -2,6 +2,7 @@ spring:
   application:
     name: authenticated_service
   jpa:
+    open-in-view: false
     database: postgresql
     show-sql: true
     generate-ddl: false
