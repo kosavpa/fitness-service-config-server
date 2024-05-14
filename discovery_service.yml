@@ -1,4 +1,6 @@
 server:
+  main:
+    web-application-type: reactive
   port: 8090
 eureka:
   instance:
