@@ -13,6 +13,7 @@ spring:
   datasource:
     platform: postgres
     driverClassName: org.postgresql.Driver
+    username: kosavpa
     password: root
     url: jdbc:postgresql://localhost:5432/fitness_blog
 
