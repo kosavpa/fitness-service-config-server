@@ -10,6 +10,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     
   datasource:
+    platform: postgres
     username: postgres
     driverClassName: org.postgresql.Driver
     password: root
