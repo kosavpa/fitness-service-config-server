@@ -1,9 +1,6 @@
 server:
   port: 8070
-spring:
-  application:
-    name: authenticated_service
-    
+spring:    
   jpa:
     open-in-view: false
     database: postgresql
