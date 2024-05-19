@@ -1,0 +1,12 @@
+server:
+  port: 8100
+
+  eureka:
+  instance:
+    preferIpAddress: true
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://configClient:configClient@localhost:8090/eureka/
