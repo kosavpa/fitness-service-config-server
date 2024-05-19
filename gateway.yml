@@ -17,3 +17,18 @@ spring:
       discovery.locator:
         enabled: true
         lowerCaseServiceId: true
+        
+      routes:
+      - id: article_service
+        uri: lb://article_service
+        predicates: 
+        - Path=/article/**
+        filters: 
+        - RewritePath=/article/(?<path>.*), /$\{path}
+        
+      - id: auth_service
+        uri: lb://auth_service
+        predicates: 
+        - Path=/auth/**
+        filters: 
+        - RewritePath=/auth/(?<path>.*), /$\{path}
