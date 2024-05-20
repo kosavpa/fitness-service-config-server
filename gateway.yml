@@ -19,15 +19,15 @@ spring:
         lowerCaseServiceId: true
         
       routes:
-      - id: article_service
-        uri: lb://article_service
+      - id: article-service
+        uri: lb://article-service
         predicates: 
         - Path=/article/**
         filters: 
         - RewritePath=/article/(?<path>.*), /$\{path}
         
-      - id: auth_service
-        uri: lb://auth_service
+      - id: auth-service
+        uri: lb://auth-service
         predicates: 
         - Path=/auth/**
         filters: 
