@@ -1,6 +1,13 @@
 server:
   port: 8080
 
+db:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/fitness_blog
+  username: postgres
+  password: root
+  platform: postgres
+
 eureka:
   instance:
     preferIpAddress: true
