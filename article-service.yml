@@ -26,7 +26,3 @@ allowOrigin: http://localhost
 flyway:
     locations: "classpath:db/migration"
     enabled: true
-    user: postgres
-    password: root
-    schemas: fitness_blog
-    url: jdbc:postgresql://localhost:5432
