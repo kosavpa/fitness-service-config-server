@@ -25,3 +25,4 @@ allowOrigin: http://localhost
 
 flyway:
     locations: "classpath:db/migration"
+    enabled: true
