@@ -23,6 +23,5 @@ token:
     
 allowOrigin: http://localhost
 
-spring:
-  flyway:
+flyway:
     locations: "classpath:db/migration"
