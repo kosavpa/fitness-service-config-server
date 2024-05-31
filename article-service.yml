@@ -6,7 +6,6 @@ db:
   url: jdbc:postgresql://localhost:5432/fitness_blog
   username: postgres
   password: root
-  platform: postgres
 
 eureka:
   instance:
@@ -23,3 +22,7 @@ token:
     key: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
     
 allowOrigin: http://localhost
+
+spring:
+  flyway:
+    locations: "classpath:db/migration"
