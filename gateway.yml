@@ -32,3 +32,18 @@ spring:
         - Path=/auth/**
         filters: 
         - RewritePath=/auth/(?<path>.*), /$\{path}
+
+        - id: video-service
+        uri: lb://video-service
+        predicates: 
+        - Path=/video/**
+        filters: 
+        - RewritePath=/video/(?<path>.*), /$\{path}
+
+        - id: chat-service
+        uri: lb://chat-service
+        predicates: 
+        - Path=/chat/**
+        filters: 
+        - RewritePath=/chat, /
+        
