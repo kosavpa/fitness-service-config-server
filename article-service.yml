@@ -3,7 +3,7 @@ server:
 
 db:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://article-db:5432/fitness_blog
+  url: jdbc:postgresql://article-db:5432/articles
   username: postgres
   password: root
 
