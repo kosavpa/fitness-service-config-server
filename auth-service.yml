@@ -6,7 +6,6 @@ db:
   url: jdbc:postgresql://auth-db:5432/users
   username: postgres
   password: root
-  platform: postgres
 
 eureka:
   instance:
