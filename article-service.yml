@@ -3,7 +3,7 @@ server:
 
 db:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/fitness_blog
+  url: jdbc:postgresql://article-db:5432/fitness_blog
   username: postgres
   password: root
 
@@ -15,7 +15,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://configClient:configClient@localhost:8090/eureka/
+      defaultZone: http://configClient:configClient@discovery:8090/eureka/
     
 token:
   signing:
