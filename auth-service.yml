@@ -3,7 +3,7 @@ server:
   
 db:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://auth_db:5432/users
+  url: jdbc:postgresql://auth-db:5432/users
   username: postgres
   password: root
   platform: postgres
