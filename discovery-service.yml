@@ -10,7 +10,7 @@ eureka:
     fetchRegistry: false
     
   serviceUrl:
-    defaultZone: http://actuatorClient:actuatorClient@${eureka.instance.hostname}:${server.port}/eureka/
+    defaultZone: http://aconfigClient:configClient@${eureka.instance.hostname}:${server.port}/eureka/
     
   server:
     waitTimeInMsWhenSyncEmpty: 5
