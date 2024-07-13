@@ -3,14 +3,13 @@ server:
   
 eureka:
   instance:
-    hostname: localhost
+    hostname: discovery
     
   client:
     registerWithEureka: false
     fetchRegistry: false
-    
-  serviceUrl:
-    defaultZone: http://aconfigClient:configClient@${eureka.instance.hostname}:${server.port}/eureka/
+    serviceUrl:
+      defaultZone: http://aconfigClient:configClient@${eureka.instance.hostname}:${server.port}/eureka/
     
   server:
     waitTimeInMsWhenSyncEmpty: 5
