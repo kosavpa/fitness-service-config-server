@@ -18,5 +18,3 @@ eureka:
     loadbalancer:
       ribbon:
         enabled: false
-        
-allowOrigin: http://localhost
