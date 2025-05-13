@@ -3,7 +3,7 @@ server:
 
 db:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/articles
+  url: jdbc:postgresql://article-db:5432/articles
   username: root
   password: root
 
@@ -15,7 +15,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://configClient:configClient@discovery:8090/eureka/
+      defaultZone: http://configClient:configClient@discovery-service:8090/eureka/
     
 token:
   signing:
