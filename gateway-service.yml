@@ -42,6 +42,6 @@ spring:
         - RewritePath=/video/(?<path>.*), /$\{path}
 
       - id: chat-service
-        uri: lb:ws://chat-service
+        uri: ws://chat-service
         predicates: 
         - Path=/chat
