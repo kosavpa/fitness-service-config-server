@@ -43,3 +43,5 @@ spring:
 
       - id: chat-service
         uri: lb:ws://chat-service
+        predicates: 
+        - Path=/chat
