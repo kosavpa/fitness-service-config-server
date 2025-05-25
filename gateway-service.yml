@@ -45,3 +45,5 @@ spring:
         uri: ws://chat-service
         predicates: 
         - Path=/chat
+        filters: 
+        - RewritePath=/chat/(?<path>.*), /$\{path}
