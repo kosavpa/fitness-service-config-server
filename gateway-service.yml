@@ -42,7 +42,7 @@ spring:
         - RewritePath=/video/(?<path>.*), /$\{path}
 
       - id: chat-service
-        uri: ws://chat-service
+        uri: lb:ws://chat-service
         predicates: 
         - Path=/chat
         filters: 
